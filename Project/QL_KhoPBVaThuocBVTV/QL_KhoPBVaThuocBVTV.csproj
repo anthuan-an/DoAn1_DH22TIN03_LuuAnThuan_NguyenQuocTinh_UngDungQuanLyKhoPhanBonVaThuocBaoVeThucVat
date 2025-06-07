@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B60073A4-957D-4F1A-8744-416C3CFEFCD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QL_KhoPBVaThuocBVTV</RootNamespace>
+    <AssemblyName>QL_KhoPBVaThuocBVTV</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.Runtime.Common.12.0.2402.15\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ReaLTaiizor, Version=3.8.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ReaLTaiizor.3.8.1.3\lib\net481\ReaLTaiizor.dll</HintPath>
+    </Reference>
+    <Reference Include="SATAUiFramework, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SATAUiFramework.1.1.3\lib\net40\SATAUiFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ChiTietKiemKe.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ChiTietPhieuNhap.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ChiTietPhieuXuat.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DangNhap.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DanhGiaSanPham.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DuDoanNhapHang.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Kho.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\KiemKeKho.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LichSuDatLaiMatKhau.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LichSuGia.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LichSuHoatDong.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LoaiSanPham.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NguoiDung.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NhaCungCap.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PhanTichBanHang.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PhieuNhapKho.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PhieuXuatKho.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\QL_KhoPBVaThuocBVTV.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_KhoPBVaThuocBVTV.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\QL_KhoPBVaThuocBVTV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\QL_KhoPBVaThuocBVTV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_KhoPBVaThuocBVTV.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SanPham.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\sysdiagram.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\YeuCauDatLaiMatKhau.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCaiDat.Designer.cs">
+      <DependentUpon>FrmCaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatLaiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatLaiMK.Designer.cs">
+      <DependentUpon>FrmDatLaiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrangChuPhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrangChuPhu.Designer.cs">
+      <DependentUpon>FrmTrangChuPhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTaiKhoan.Designer.cs">
+      <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>FrmQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuenMK.Designer.cs">
+      <DependentUpon>FrmQuenMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageZoom.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuanLyTaiKhoan.resx">
+      <DependentUpon>FrmQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrangChuPhu.resx">
+      <DependentUpon>FrmTrangChuPhu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Data\QL_KhoPBVaThuocBVTV.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QL_KhoPBVaThuocBVTV.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Data\QL_KhoPBVaThuocBVTV.edmx.diagram">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\QL_KhoPBVaThuocBVTV.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QL_KhoPBVaThuocBVTV.edmx</DependentUpon>
+      <LastGenOutput>QL_KhoPBVaThuocBVTV.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\QL_KhoPBVaThuocBVTV.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QL_KhoPBVaThuocBVTV.edmx</DependentUpon>
+      <LastGenOutput>QL_KhoPBVaThuocBVTV.cs</LastGenOutput>
+    </Content>
+    <Content Include="Img\Avatar\ngu.jpg" />
+    <Content Include="Img\Avatar\nguyen.jpg" />
+    <Content Include="Img\icon\add.png" />
+    <Content Include="Img\icon\baocaonhapkhotheodoituong.png" />
+    <Content Include="Img\icon\baocaonhapxuatton.png" />
+    <Content Include="Img\icon\Baocaotonkhotonghop.png" />
+    <Content Include="Img\icon\Bootstrap-Bootstrap-Bootstrap-list.512.png" />
+    <Content Include="Img\icon\chuyenkho.png" />
+    <Content Include="Img\icon\commodity group.png" />
+    <Content Include="Img\icon\conmat.png" />
+    <Content Include="Img\icon\export.png" />
+    <Content Include="Img\icon\hanghoa.png" />
+    <Content Include="Img\icon\Hide.png" />
+    <Content Include="Img\icon\icons8-about-32.png" />
+    <Content Include="Img\icon\icons8-about-50.png" />
+    <Content Include="Img\icon\icons8-account-32.png" />
+    <Content Include="Img\icon\icons8-account.png" />
+    <Content Include="Img\icon\icons8-back-50.png" />
+    <Content Include="Img\icon\icons8-back.png" />
+    <Content Include="Img\icon\icons8-bell-50.png" />
+    <Content Include="Img\icon\icons8-category-32.png" />
+    <Content Include="Img\icon\icons8-evaluate-32.png" />
+    <Content Include="Img\icon\icons8-export-32.png" />
+    <Content Include="Img\icon\icons8-fast-moving-consumer-goods-32.png" />
+    <Content Include="Img\icon\icons8-good-pincode-50.png" />
+    <Content Include="Img\icon\icons8-group-of-companies-32.png" />
+    <Content Include="Img\icon\icons8-hide-10.png" />
+    <Content Include="Img\icon\icons8-history-32.png" />
+    <Content Include="Img\icon\icons8-home-24.png" />
+    <Content Include="Img\icon\icons8-home-32.png" />
+    <Content Include="Img\icon\icons8-home-50.png" />
+    <Content Include="Img\icon\icons8-import-32.png" />
+    <Content Include="Img\icon\icons8-logout-32.png" />
+    <Content Include="Img\icon\icons8-medical-history-24.png" />
+    <Content Include="Img\icon\icons8-order-history-50.png" />
+    <Content Include="Img\icon\icons8-packing-32.png" />
+    <Content Include="Img\icon\icons8-payment-history-50.png" />
+    <Content Include="Img\icon\icons8-product-32.png" />
+    <Content Include="Img\icon\icons8-products-32.png" />
+    <Content Include="Img\icon\icons8-progress-indicator-32.png" />
+    <Content Include="Img\icon\icons8-report-32 %281%29.png" />
+    <Content Include="Img\icon\icons8-report-32.png" />
+    <Content Include="Img\icon\icons8-right-48.png" />
+    <Content Include="Img\icon\icons8-right-64.png" />
+    <Content Include="Img\icon\icons8-search-32.png" />
+    <Content Include="Img\icon\icons8-settings-100.png" />
+    <Content Include="Img\icon\icons8-settings-32.png" />
+    <Content Include="Img\icon\icons8-settings.png" />
+    <Content Include="Img\icon\icons8-staff-50.png" />
+    <Content Include="Img\icon\icons8-staff.png" />
+    <Content Include="Img\icon\icons8-warehouse-32.png" />
+    <Content Include="Img\icon\khohang.png" />
+    <Content Include="Img\icon\list.png" />
+    <Content Include="Img\icon\manufacturer.png" />
+    <Content Include="Img\icon\nhanvien.png" />
+    <Content Include="Img\icon\phieunhapkho.png" />
+    <Content Include="Img\icon\taikhoan.png" />
+    <Content Include="Img\icon\tonkho.png" />
+    <Content Include="Img\icon\Xuatkhotheodt.png" />
+    <Content Include="Img\image %281%29.jpg" />
+    <Content Include="Img\image.jpg" />
+    <Content Include="Img\img1.jpg" />
+    <Content Include="Img\login.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
