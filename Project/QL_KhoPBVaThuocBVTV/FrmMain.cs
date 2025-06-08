@@ -20,6 +20,7 @@ namespace QL_KhoPBVaThuocBVTV
         bool SidebarExpanded = false;
         Panel currentMenuPanel = null;
         bool currentMenuExpanded = false;
+        private bool isLoggingOut = false;
         Panel nextMenuPanel = null;
 
 
@@ -71,7 +72,6 @@ namespace QL_KhoPBVaThuocBVTV
                     break;
 
                 case "Nhân viên":
-                    MenuQuanLy.Visible = false;
                     //sản phẩm
                     MenuKho.Visible = false;
                     //nhap hang
@@ -95,7 +95,6 @@ namespace QL_KhoPBVaThuocBVTV
 
                 default:
                     MessageBox.Show("Phân quyền không hợp lệ. Vui lòng liên hệ quản trị viên.", "Lỗi phân quyền", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                     FrmLogin frmLogin = new FrmLogin();
                     frmLogin.Show();
                     this.Hide();
@@ -153,12 +152,16 @@ namespace QL_KhoPBVaThuocBVTV
                     lbl.Click += (s, e) =>
                     {
                         int maYeuCau = (int)((Label)s).Tag;
-                        FrmQuanLyTaiKhoan frmQLTK = new FrmQuanLyTaiKhoan(MaND);
-                        FrmDatLaiMK frmDatLaiMK = new FrmDatLaiMK(item.MaYeuCau.ToString());
+                        FrmQuanLyTaiKhoan frmQLTK = new FrmQuanLyTaiKhoan(MaND, PhanQuyen);
+
+                        // Gán sự kiện load cho FrmQuanLyTaiKhoan để chỉ gọi MoFormCon sau khi load xong
+                        frmQLTK.Load += (sender2, e2) =>
+                        {
+                            FrmDatLaiMK frmDatLaiMK = new FrmDatLaiMK(maYeuCau.ToString());
+                            frmQLTK.MoFormConTrongPanel(frmDatLaiMK);
+                        };
 
                         OpenChildForm(frmQLTK);
-                        frmQLTK.MoFormConTrongPanel(frmDatLaiMK);
-
                         pnlBanTB.Visible = false;
                     };
 
@@ -197,14 +200,18 @@ namespace QL_KhoPBVaThuocBVTV
         private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
 
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát chương trình?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-                Environment.Exit(1);
+            if (!isLoggingOut)
+             {
+                    DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát chương trình?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.No)
+                    {
+                        e.Cancel = true;
+                }
+                else
+                {
+                    // Thoát hoàn toàn ứng dụng
+                    Environment.Exit(0);
+                }
             }
         }
         private int GetMenuHeight(Panel menu)
@@ -367,7 +374,7 @@ namespace QL_KhoPBVaThuocBVTV
         // ql tài Khoản
         private void btnQuanLyTaiKhoan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmQuanLyTaiKhoan(MaND));
+            OpenChildForm(new FrmQuanLyTaiKhoan(MaND,PhanQuyen));
         }
 
         // cài đặt
@@ -383,6 +390,7 @@ namespace QL_KhoPBVaThuocBVTV
         //Dang Xuất
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
+            isLoggingOut = true;
             this.Close();
         }
 

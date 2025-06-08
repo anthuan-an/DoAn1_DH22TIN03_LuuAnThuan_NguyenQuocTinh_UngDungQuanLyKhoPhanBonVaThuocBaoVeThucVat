@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmQuanLyTaiKhoan));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pnlMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnHien = new Guna.UI2.WinForms.Guna2Button();
             this.btnAn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -42,12 +43,15 @@
             this.pnlQuanLy = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.TrSTInOuter = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.lblThongBao = new ReaLTaiizor.Controls.SkyLabel();
+            this.guna2CustomGradientPanel1.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2CustomGradientPanel1
             // 
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomGradientPanel1.Controls.Add(this.lblThongBao);
             this.TrSTInOuter.SetDecoration(this.guna2CustomGradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(35)))), ((int)(((byte)(126)))));
@@ -58,6 +62,7 @@
             // 
             // pnlMenu
             // 
+            this.pnlMenu.Controls.Add(this.btnKhachHang);
             this.pnlMenu.Controls.Add(this.btnHien);
             this.pnlMenu.Controls.Add(this.btnAn);
             this.pnlMenu.Controls.Add(this.guna2Separator1);
@@ -74,6 +79,36 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(90, 713);
             this.pnlMenu.TabIndex = 2;
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKhachHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnKhachHang.BorderColor = System.Drawing.Color.Transparent;
+            this.btnKhachHang.BorderRadius = 10;
+            this.TrSTInOuter.SetDecoration(this.btnKhachHang, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btnKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhachHang.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnKhachHang.FillColor = System.Drawing.Color.Transparent;
+            this.btnKhachHang.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnKhachHang.Font = new System.Drawing.Font("Segoe UI Historic", 8F, System.Drawing.FontStyle.Bold);
+            this.btnKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
+            this.btnKhachHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnKhachHang.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnKhachHang.Location = new System.Drawing.Point(-183, 286);
+            this.btnKhachHang.MaximumSize = new System.Drawing.Size(270, 80);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(270, 80);
+            this.btnKhachHang.TabIndex = 7;
+            this.btnKhachHang.Text = "Khách Hàng";
+            this.btnKhachHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // btnHien
             // 
@@ -149,13 +184,13 @@
             this.btnCapLai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCapLai.FillColor = System.Drawing.Color.Transparent;
             this.btnCapLai.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnCapLai.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapLai.Font = new System.Drawing.Font("Segoe UI Historic", 8F, System.Drawing.FontStyle.Bold);
             this.btnCapLai.ForeColor = System.Drawing.Color.White;
-            this.btnCapLai.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnCapLai.HoverState.FillColor2 = System.Drawing.Color.Red;
             this.btnCapLai.Image = ((System.Drawing.Image)(resources.GetObject("btnCapLai.Image")));
             this.btnCapLai.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCapLai.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnCapLai.Location = new System.Drawing.Point(-182, 376);
+            this.btnCapLai.Location = new System.Drawing.Point(-183, 427);
             this.btnCapLai.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnCapLai.Name = "btnCapLai";
             this.btnCapLai.Size = new System.Drawing.Size(270, 80);
@@ -179,13 +214,13 @@
             this.btnTaiKhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnTaiKhoan.FillColor = System.Drawing.Color.Transparent;
             this.btnTaiKhoan.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTaiKhoan.Font = new System.Drawing.Font("Segoe UI Historic", 8F, System.Drawing.FontStyle.Bold);
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
             this.btnTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.Image")));
             this.btnTaiKhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnTaiKhoan.Location = new System.Drawing.Point(-182, 218);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(-183, 153);
             this.btnTaiKhoan.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Size = new System.Drawing.Size(270, 80);
@@ -209,13 +244,13 @@
             this.btnNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnNhanVien.FillColor = System.Drawing.Color.Transparent;
             this.btnNhanVien.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI Historic", 8F, System.Drawing.FontStyle.Bold);
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
             this.btnNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnNhanVien.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnNhanVien.Location = new System.Drawing.Point(-181, 64);
+            this.btnNhanVien.Location = new System.Drawing.Point(-181, 33);
             this.btnNhanVien.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(270, 80);
@@ -237,22 +272,33 @@
             // 
             this.TrSTInOuter.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.TrSTInOuter.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.TrSTInOuter.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.TrSTInOuter.DefaultAnimation = animation1;
+            // 
+            // lblThongBao
+            // 
+            this.TrSTInOuter.SetDecoration(this.lblThongBao, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblThongBao.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblThongBao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblThongBao.Location = new System.Drawing.Point(185, 9);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(891, 40);
+            this.lblThongBao.TabIndex = 0;
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmQuanLyTaiKhoan
             // 
@@ -267,6 +313,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmQuanLyTaiKhoan";
             this.Text = "FrmQuanLyTaiKhoan";
+            this.Load += new System.EventHandler(this.FrmQuanLyTaiKhoan_Load);
+            this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -285,5 +333,7 @@
         private Guna.UI2.WinForms.Guna2Button btnAn;
         private Guna.UI2.WinForms.Guna2Button btnHien;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnKhachHang;
+        private ReaLTaiizor.Controls.SkyLabel lblThongBao;
     }
 }

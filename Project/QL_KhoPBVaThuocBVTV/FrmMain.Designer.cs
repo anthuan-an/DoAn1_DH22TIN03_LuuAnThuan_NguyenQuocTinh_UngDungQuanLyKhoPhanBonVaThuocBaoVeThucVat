@@ -67,9 +67,25 @@
             this.MenuLichSu = new System.Windows.Forms.FlowLayoutPanel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.btnLichSu = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.MenuLichSuGia = new System.Windows.Forms.Panel();
+            this.btnLichSuGia = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.btnDanhGia = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.btnLichSuDatLaiMK = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.btnLichSuDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.MenuBaoCao = new System.Windows.Forms.FlowLayoutPanel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.btnBaoCao = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnBaoCaoNhapXuatTon = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.btnBaoCaoTonKho = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnBaoCaoNhapKhoTheoDoiTuong = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnBaoCaoXuatKhoTheoDoiTuong = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnTrangChu = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -91,22 +107,6 @@
             this.panelMain = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlBanTB = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnBaoCaoNhapXuatTon = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnBaoCaoXuatKhoTheoDoiTuong = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.btnBaoCaoNhapKhoTheoDoiTuong = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.btnBaoCaoTonKho = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.MenuLichSuGia = new System.Windows.Forms.Panel();
-            this.btnLichSuGia = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.btnLichSuDatLaiMK = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.btnDanhGia = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.btnLichSuDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel1.SuspendLayout();
             this.pnlThongBao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -125,8 +125,16 @@
             this.MenuBaoCaoNhapKho.SuspendLayout();
             this.MenuLichSu.SuspendLayout();
             this.panel15.SuspendLayout();
+            this.MenuLichSuGia.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel22.SuspendLayout();
             this.MenuBaoCao.SuspendLayout();
             this.panel20.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.Sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.MenuQuanLy.SuspendLayout();
@@ -136,14 +144,6 @@
             this.MenuXuatKho.SuspendLayout();
             this.panel28.SuspendLayout();
             this.MenuBaoCaoXuatKho.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.MenuLichSuGia.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -743,6 +743,140 @@
             this.btnLichSu.Text = "Lịch Sử";
             this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
             // 
+            // MenuLichSuGia
+            // 
+            this.MenuLichSuGia.Controls.Add(this.btnLichSuGia);
+            this.MenuLichSuGia.Location = new System.Drawing.Point(2, 62);
+            this.MenuLichSuGia.Name = "MenuLichSuGia";
+            this.MenuLichSuGia.Size = new System.Drawing.Size(239, 57);
+            this.MenuLichSuGia.TabIndex = 20;
+            // 
+            // btnLichSuGia
+            // 
+            this.btnLichSuGia.AutoRoundedCorners = true;
+            this.btnLichSuGia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuGia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuGia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLichSuGia.FillColor = System.Drawing.Color.White;
+            this.btnLichSuGia.FillColor2 = System.Drawing.Color.White;
+            this.btnLichSuGia.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnLichSuGia.ForeColor = System.Drawing.Color.Black;
+            this.btnLichSuGia.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnLichSuGia.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnLichSuGia.Image = ((System.Drawing.Image)(resources.GetObject("btnLichSuGia.Image")));
+            this.btnLichSuGia.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLichSuGia.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnLichSuGia.Location = new System.Drawing.Point(7, 0);
+            this.btnLichSuGia.Name = "btnLichSuGia";
+            this.btnLichSuGia.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnLichSuGia.Size = new System.Drawing.Size(232, 57);
+            this.btnLichSuGia.TabIndex = 25;
+            this.btnLichSuGia.Text = "Lịch Sử Giá";
+            this.btnLichSuGia.Click += new System.EventHandler(this.btnLichSuGia_Click);
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.btnDanhGia);
+            this.panel21.Location = new System.Drawing.Point(2, 125);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(239, 57);
+            this.panel21.TabIndex = 23;
+            // 
+            // btnDanhGia
+            // 
+            this.btnDanhGia.AutoRoundedCorners = true;
+            this.btnDanhGia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhGia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDanhGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhGia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDanhGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDanhGia.FillColor = System.Drawing.Color.White;
+            this.btnDanhGia.FillColor2 = System.Drawing.Color.White;
+            this.btnDanhGia.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnDanhGia.ForeColor = System.Drawing.Color.Black;
+            this.btnDanhGia.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnDanhGia.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnDanhGia.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhGia.Image")));
+            this.btnDanhGia.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDanhGia.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnDanhGia.Location = new System.Drawing.Point(7, 0);
+            this.btnDanhGia.Name = "btnDanhGia";
+            this.btnDanhGia.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnDanhGia.Size = new System.Drawing.Size(232, 57);
+            this.btnDanhGia.TabIndex = 26;
+            this.btnDanhGia.Text = "Lịch Sử Đánh Giá";
+            this.btnDanhGia.Click += new System.EventHandler(this.btnDanhGia_Click);
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.btnLichSuDatLaiMK);
+            this.panel18.Location = new System.Drawing.Point(2, 188);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(239, 57);
+            this.panel18.TabIndex = 21;
+            // 
+            // btnLichSuDatLaiMK
+            // 
+            this.btnLichSuDatLaiMK.AutoRoundedCorners = true;
+            this.btnLichSuDatLaiMK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuDatLaiMK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuDatLaiMK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuDatLaiMK.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuDatLaiMK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLichSuDatLaiMK.FillColor = System.Drawing.Color.White;
+            this.btnLichSuDatLaiMK.FillColor2 = System.Drawing.Color.White;
+            this.btnLichSuDatLaiMK.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnLichSuDatLaiMK.ForeColor = System.Drawing.Color.Black;
+            this.btnLichSuDatLaiMK.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnLichSuDatLaiMK.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnLichSuDatLaiMK.Image = ((System.Drawing.Image)(resources.GetObject("btnLichSuDatLaiMK.Image")));
+            this.btnLichSuDatLaiMK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLichSuDatLaiMK.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnLichSuDatLaiMK.Location = new System.Drawing.Point(7, 0);
+            this.btnLichSuDatLaiMK.Name = "btnLichSuDatLaiMK";
+            this.btnLichSuDatLaiMK.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnLichSuDatLaiMK.Size = new System.Drawing.Size(232, 57);
+            this.btnLichSuDatLaiMK.TabIndex = 28;
+            this.btnLichSuDatLaiMK.Text = "Lịch Sử Cấp Lại Mật Khẩu";
+            this.btnLichSuDatLaiMK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnLichSuDatLaiMK.Click += new System.EventHandler(this.btnLichSuDatLaiMK_Click);
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.btnLichSuDangNhap);
+            this.panel22.Location = new System.Drawing.Point(2, 251);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(239, 57);
+            this.panel22.TabIndex = 22;
+            // 
+            // btnLichSuDangNhap
+            // 
+            this.btnLichSuDangNhap.AutoRoundedCorners = true;
+            this.btnLichSuDangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuDangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLichSuDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuDangNhap.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLichSuDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLichSuDangNhap.FillColor = System.Drawing.Color.White;
+            this.btnLichSuDangNhap.FillColor2 = System.Drawing.Color.White;
+            this.btnLichSuDangNhap.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnLichSuDangNhap.ForeColor = System.Drawing.Color.Black;
+            this.btnLichSuDangNhap.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnLichSuDangNhap.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnLichSuDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnLichSuDangNhap.Image")));
+            this.btnLichSuDangNhap.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnLichSuDangNhap.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnLichSuDangNhap.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnLichSuDangNhap.Location = new System.Drawing.Point(7, 0);
+            this.btnLichSuDangNhap.Name = "btnLichSuDangNhap";
+            this.btnLichSuDangNhap.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnLichSuDangNhap.Size = new System.Drawing.Size(232, 57);
+            this.btnLichSuDangNhap.TabIndex = 27;
+            this.btnLichSuDangNhap.Text = "Lịch Sử Đăng Nhập";
+            this.btnLichSuDangNhap.Click += new System.EventHandler(this.btnLichSuDangNhap_Click);
+            // 
             // MenuBaoCao
             // 
             this.MenuBaoCao.BackColor = System.Drawing.Color.Transparent;
@@ -792,6 +926,140 @@
             this.btnBaoCao.TabIndex = 18;
             this.btnBaoCao.Text = "Báo Cáo";
             this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btnBaoCaoNhapXuatTon);
+            this.panel5.Location = new System.Drawing.Point(2, 62);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(239, 57);
+            this.panel5.TabIndex = 16;
+            // 
+            // btnBaoCaoNhapXuatTon
+            // 
+            this.btnBaoCaoNhapXuatTon.AutoRoundedCorners = true;
+            this.btnBaoCaoNhapXuatTon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoNhapXuatTon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoNhapXuatTon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoNhapXuatTon.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoNhapXuatTon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCaoNhapXuatTon.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoNhapXuatTon.FillColor2 = System.Drawing.Color.White;
+            this.btnBaoCaoNhapXuatTon.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnBaoCaoNhapXuatTon.ForeColor = System.Drawing.Color.Black;
+            this.btnBaoCaoNhapXuatTon.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoNhapXuatTon.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnBaoCaoNhapXuatTon.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoNhapXuatTon.Image")));
+            this.btnBaoCaoNhapXuatTon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBaoCaoNhapXuatTon.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnBaoCaoNhapXuatTon.Location = new System.Drawing.Point(7, 0);
+            this.btnBaoCaoNhapXuatTon.Name = "btnBaoCaoNhapXuatTon";
+            this.btnBaoCaoNhapXuatTon.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnBaoCaoNhapXuatTon.Size = new System.Drawing.Size(232, 57);
+            this.btnBaoCaoNhapXuatTon.TabIndex = 25;
+            this.btnBaoCaoNhapXuatTon.Text = "Nhập Xuất Tồn";
+            this.btnBaoCaoNhapXuatTon.Click += new System.EventHandler(this.btnBaoCaoNhapXuatTon_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.btnBaoCaoTonKho);
+            this.panel12.Location = new System.Drawing.Point(2, 125);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(239, 57);
+            this.panel12.TabIndex = 17;
+            // 
+            // btnBaoCaoTonKho
+            // 
+            this.btnBaoCaoTonKho.AutoRoundedCorners = true;
+            this.btnBaoCaoTonKho.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoTonKho.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoTonKho.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoTonKho.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoTonKho.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCaoTonKho.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoTonKho.FillColor2 = System.Drawing.Color.White;
+            this.btnBaoCaoTonKho.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnBaoCaoTonKho.ForeColor = System.Drawing.Color.Black;
+            this.btnBaoCaoTonKho.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoTonKho.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnBaoCaoTonKho.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoTonKho.Image")));
+            this.btnBaoCaoTonKho.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBaoCaoTonKho.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnBaoCaoTonKho.Location = new System.Drawing.Point(7, 0);
+            this.btnBaoCaoTonKho.Name = "btnBaoCaoTonKho";
+            this.btnBaoCaoTonKho.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnBaoCaoTonKho.Size = new System.Drawing.Size(232, 57);
+            this.btnBaoCaoTonKho.TabIndex = 28;
+            this.btnBaoCaoTonKho.Text = "Tồn Kho Tổng Hợp";
+            this.btnBaoCaoTonKho.Click += new System.EventHandler(this.btnBaoCaoTonKho_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.btnBaoCaoNhapKhoTheoDoiTuong);
+            this.panel11.Location = new System.Drawing.Point(2, 188);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(239, 57);
+            this.panel11.TabIndex = 19;
+            // 
+            // btnBaoCaoNhapKhoTheoDoiTuong
+            // 
+            this.btnBaoCaoNhapKhoTheoDoiTuong.AutoRoundedCorners = true;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCaoNhapKhoTheoDoiTuong.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.FillColor2 = System.Drawing.Color.White;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnBaoCaoNhapKhoTheoDoiTuong.ForeColor = System.Drawing.Color.Black;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoNhapKhoTheoDoiTuong.Image")));
+            this.btnBaoCaoNhapKhoTheoDoiTuong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Location = new System.Drawing.Point(7, 0);
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Name = "btnBaoCaoNhapKhoTheoDoiTuong";
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Size = new System.Drawing.Size(232, 57);
+            this.btnBaoCaoNhapKhoTheoDoiTuong.TabIndex = 26;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Text = "Nhập Kho Theo Đối Tượng";
+            this.btnBaoCaoNhapKhoTheoDoiTuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnBaoCaoNhapKhoTheoDoiTuong.Click += new System.EventHandler(this.btnBaoCaoNhapKhoTheoDoiTuong_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnBaoCaoXuatKhoTheoDoiTuong);
+            this.panel7.Location = new System.Drawing.Point(2, 251);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(239, 57);
+            this.panel7.TabIndex = 18;
+            // 
+            // btnBaoCaoXuatKhoTheoDoiTuong
+            // 
+            this.btnBaoCaoXuatKhoTheoDoiTuong.AutoRoundedCorners = true;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCaoXuatKhoTheoDoiTuong.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.FillColor2 = System.Drawing.Color.White;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Font = new System.Drawing.Font("Leelawadee UI", 8F);
+            this.btnBaoCaoXuatKhoTheoDoiTuong.ForeColor = System.Drawing.Color.Black;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.HoverState.FillColor = System.Drawing.Color.White;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.HoverState.FillColor2 = System.Drawing.Color.Cyan;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoXuatKhoTheoDoiTuong.Image")));
+            this.btnBaoCaoXuatKhoTheoDoiTuong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Location = new System.Drawing.Point(7, 0);
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Name = "btnBaoCaoXuatKhoTheoDoiTuong";
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Size = new System.Drawing.Size(232, 57);
+            this.btnBaoCaoXuatKhoTheoDoiTuong.TabIndex = 27;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Text = "Xuất Kho Theo Đối Tượng";
+            this.btnBaoCaoXuatKhoTheoDoiTuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnBaoCaoXuatKhoTheoDoiTuong.Click += new System.EventHandler(this.btnBaoCaoTonKho_Click);
             // 
             // Sidebar
             // 
@@ -1086,11 +1354,11 @@
             this.pnlBanTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlBanTB.AutoScroll = true;
-            this.pnlBanTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlBanTB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pnlBanTB.BorderRadius = 10;
             this.pnlBanTB.Location = new System.Drawing.Point(1060, 51);
             this.pnlBanTB.Name = "pnlBanTB";
-            this.pnlBanTB.Size = new System.Drawing.Size(318, 100);
+            this.pnlBanTB.Size = new System.Drawing.Size(329, 88);
             this.pnlBanTB.TabIndex = 0;
             // 
             // guna2DragControl1
@@ -1098,274 +1366,6 @@
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this.panel1;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btnBaoCaoNhapXuatTon);
-            this.panel5.Location = new System.Drawing.Point(2, 62);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(239, 57);
-            this.panel5.TabIndex = 16;
-            // 
-            // btnBaoCaoNhapXuatTon
-            // 
-            this.btnBaoCaoNhapXuatTon.AutoRoundedCorners = true;
-            this.btnBaoCaoNhapXuatTon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoNhapXuatTon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoNhapXuatTon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoNhapXuatTon.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoNhapXuatTon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBaoCaoNhapXuatTon.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoNhapXuatTon.FillColor2 = System.Drawing.Color.White;
-            this.btnBaoCaoNhapXuatTon.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnBaoCaoNhapXuatTon.ForeColor = System.Drawing.Color.Black;
-            this.btnBaoCaoNhapXuatTon.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoNhapXuatTon.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnBaoCaoNhapXuatTon.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoNhapXuatTon.Image")));
-            this.btnBaoCaoNhapXuatTon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBaoCaoNhapXuatTon.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnBaoCaoNhapXuatTon.Location = new System.Drawing.Point(7, 0);
-            this.btnBaoCaoNhapXuatTon.Name = "btnBaoCaoNhapXuatTon";
-            this.btnBaoCaoNhapXuatTon.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnBaoCaoNhapXuatTon.Size = new System.Drawing.Size(232, 57);
-            this.btnBaoCaoNhapXuatTon.TabIndex = 25;
-            this.btnBaoCaoNhapXuatTon.Text = "Nhập Xuất Tồn";
-            this.btnBaoCaoNhapXuatTon.Click += new System.EventHandler(this.btnBaoCaoNhapXuatTon_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnBaoCaoXuatKhoTheoDoiTuong);
-            this.panel7.Location = new System.Drawing.Point(2, 251);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(239, 57);
-            this.panel7.TabIndex = 18;
-            // 
-            // btnBaoCaoXuatKhoTheoDoiTuong
-            // 
-            this.btnBaoCaoXuatKhoTheoDoiTuong.AutoRoundedCorners = true;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoXuatKhoTheoDoiTuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBaoCaoXuatKhoTheoDoiTuong.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.FillColor2 = System.Drawing.Color.White;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnBaoCaoXuatKhoTheoDoiTuong.ForeColor = System.Drawing.Color.Black;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoXuatKhoTheoDoiTuong.Image")));
-            this.btnBaoCaoXuatKhoTheoDoiTuong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Location = new System.Drawing.Point(7, 0);
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Name = "btnBaoCaoXuatKhoTheoDoiTuong";
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Size = new System.Drawing.Size(232, 57);
-            this.btnBaoCaoXuatKhoTheoDoiTuong.TabIndex = 27;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Text = "Xuất Kho Theo Đối Tượng";
-            this.btnBaoCaoXuatKhoTheoDoiTuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnBaoCaoXuatKhoTheoDoiTuong.Click += new System.EventHandler(this.btnBaoCaoTonKho_Click);
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.btnBaoCaoNhapKhoTheoDoiTuong);
-            this.panel11.Location = new System.Drawing.Point(2, 188);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(239, 57);
-            this.panel11.TabIndex = 19;
-            // 
-            // btnBaoCaoNhapKhoTheoDoiTuong
-            // 
-            this.btnBaoCaoNhapKhoTheoDoiTuong.AutoRoundedCorners = true;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoNhapKhoTheoDoiTuong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBaoCaoNhapKhoTheoDoiTuong.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.FillColor2 = System.Drawing.Color.White;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnBaoCaoNhapKhoTheoDoiTuong.ForeColor = System.Drawing.Color.Black;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoNhapKhoTheoDoiTuong.Image")));
-            this.btnBaoCaoNhapKhoTheoDoiTuong.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Location = new System.Drawing.Point(7, 0);
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Name = "btnBaoCaoNhapKhoTheoDoiTuong";
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Size = new System.Drawing.Size(232, 57);
-            this.btnBaoCaoNhapKhoTheoDoiTuong.TabIndex = 26;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Text = "Nhập Kho Theo Đối Tượng";
-            this.btnBaoCaoNhapKhoTheoDoiTuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnBaoCaoNhapKhoTheoDoiTuong.Click += new System.EventHandler(this.btnBaoCaoNhapKhoTheoDoiTuong_Click);
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.btnBaoCaoTonKho);
-            this.panel12.Location = new System.Drawing.Point(2, 125);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(239, 57);
-            this.panel12.TabIndex = 17;
-            // 
-            // btnBaoCaoTonKho
-            // 
-            this.btnBaoCaoTonKho.AutoRoundedCorners = true;
-            this.btnBaoCaoTonKho.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoTonKho.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoTonKho.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoTonKho.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoTonKho.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBaoCaoTonKho.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoTonKho.FillColor2 = System.Drawing.Color.White;
-            this.btnBaoCaoTonKho.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnBaoCaoTonKho.ForeColor = System.Drawing.Color.Black;
-            this.btnBaoCaoTonKho.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnBaoCaoTonKho.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnBaoCaoTonKho.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoTonKho.Image")));
-            this.btnBaoCaoTonKho.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBaoCaoTonKho.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnBaoCaoTonKho.Location = new System.Drawing.Point(7, 0);
-            this.btnBaoCaoTonKho.Name = "btnBaoCaoTonKho";
-            this.btnBaoCaoTonKho.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnBaoCaoTonKho.Size = new System.Drawing.Size(232, 57);
-            this.btnBaoCaoTonKho.TabIndex = 28;
-            this.btnBaoCaoTonKho.Text = "Tồn Kho Tổng Hợp";
-            this.btnBaoCaoTonKho.Click += new System.EventHandler(this.btnBaoCaoTonKho_Click);
-            // 
-            // MenuLichSuGia
-            // 
-            this.MenuLichSuGia.Controls.Add(this.btnLichSuGia);
-            this.MenuLichSuGia.Location = new System.Drawing.Point(2, 62);
-            this.MenuLichSuGia.Name = "MenuLichSuGia";
-            this.MenuLichSuGia.Size = new System.Drawing.Size(239, 57);
-            this.MenuLichSuGia.TabIndex = 20;
-            // 
-            // btnLichSuGia
-            // 
-            this.btnLichSuGia.AutoRoundedCorners = true;
-            this.btnLichSuGia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSuGia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSuGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSuGia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSuGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLichSuGia.FillColor = System.Drawing.Color.White;
-            this.btnLichSuGia.FillColor2 = System.Drawing.Color.White;
-            this.btnLichSuGia.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnLichSuGia.ForeColor = System.Drawing.Color.Black;
-            this.btnLichSuGia.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnLichSuGia.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnLichSuGia.Image = ((System.Drawing.Image)(resources.GetObject("btnLichSuGia.Image")));
-            this.btnLichSuGia.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLichSuGia.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnLichSuGia.Location = new System.Drawing.Point(7, 0);
-            this.btnLichSuGia.Name = "btnLichSuGia";
-            this.btnLichSuGia.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnLichSuGia.Size = new System.Drawing.Size(232, 57);
-            this.btnLichSuGia.TabIndex = 25;
-            this.btnLichSuGia.Text = "Lịch Sử Giá";
-            this.btnLichSuGia.Click += new System.EventHandler(this.btnLichSuGia_Click);
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.btnLichSuDatLaiMK);
-            this.panel18.Location = new System.Drawing.Point(2, 188);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(239, 57);
-            this.panel18.TabIndex = 21;
-            // 
-            // btnLichSuDatLaiMK
-            // 
-            this.btnLichSuDatLaiMK.AutoRoundedCorners = true;
-            this.btnLichSuDatLaiMK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSuDatLaiMK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSuDatLaiMK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSuDatLaiMK.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSuDatLaiMK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLichSuDatLaiMK.FillColor = System.Drawing.Color.White;
-            this.btnLichSuDatLaiMK.FillColor2 = System.Drawing.Color.White;
-            this.btnLichSuDatLaiMK.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnLichSuDatLaiMK.ForeColor = System.Drawing.Color.Black;
-            this.btnLichSuDatLaiMK.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnLichSuDatLaiMK.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnLichSuDatLaiMK.Image = ((System.Drawing.Image)(resources.GetObject("btnLichSuDatLaiMK.Image")));
-            this.btnLichSuDatLaiMK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLichSuDatLaiMK.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnLichSuDatLaiMK.Location = new System.Drawing.Point(7, 0);
-            this.btnLichSuDatLaiMK.Name = "btnLichSuDatLaiMK";
-            this.btnLichSuDatLaiMK.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnLichSuDatLaiMK.Size = new System.Drawing.Size(232, 57);
-            this.btnLichSuDatLaiMK.TabIndex = 28;
-            this.btnLichSuDatLaiMK.Text = "Lịch Sử Cấp Lại Mật Khẩu";
-            this.btnLichSuDatLaiMK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnLichSuDatLaiMK.Click += new System.EventHandler(this.btnLichSuDatLaiMK_Click);
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.btnDanhGia);
-            this.panel21.Location = new System.Drawing.Point(2, 125);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(239, 57);
-            this.panel21.TabIndex = 23;
-            // 
-            // btnDanhGia
-            // 
-            this.btnDanhGia.AutoRoundedCorners = true;
-            this.btnDanhGia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDanhGia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDanhGia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDanhGia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDanhGia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDanhGia.FillColor = System.Drawing.Color.White;
-            this.btnDanhGia.FillColor2 = System.Drawing.Color.White;
-            this.btnDanhGia.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnDanhGia.ForeColor = System.Drawing.Color.Black;
-            this.btnDanhGia.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnDanhGia.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnDanhGia.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhGia.Image")));
-            this.btnDanhGia.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDanhGia.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnDanhGia.Location = new System.Drawing.Point(7, 0);
-            this.btnDanhGia.Name = "btnDanhGia";
-            this.btnDanhGia.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDanhGia.Size = new System.Drawing.Size(232, 57);
-            this.btnDanhGia.TabIndex = 26;
-            this.btnDanhGia.Text = "Lịch Sử Đánh Giá";
-            this.btnDanhGia.Click += new System.EventHandler(this.btnDanhGia_Click);
-            // 
-            // panel22
-            // 
-            this.panel22.Controls.Add(this.btnLichSuDangNhap);
-            this.panel22.Location = new System.Drawing.Point(2, 251);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(239, 57);
-            this.panel22.TabIndex = 22;
-            // 
-            // btnLichSuDangNhap
-            // 
-            this.btnLichSuDangNhap.AutoRoundedCorners = true;
-            this.btnLichSuDangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSuDangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLichSuDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSuDangNhap.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLichSuDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLichSuDangNhap.FillColor = System.Drawing.Color.White;
-            this.btnLichSuDangNhap.FillColor2 = System.Drawing.Color.White;
-            this.btnLichSuDangNhap.Font = new System.Drawing.Font("Leelawadee UI", 8F);
-            this.btnLichSuDangNhap.ForeColor = System.Drawing.Color.Black;
-            this.btnLichSuDangNhap.HoverState.FillColor = System.Drawing.Color.White;
-            this.btnLichSuDangNhap.HoverState.FillColor2 = System.Drawing.Color.Cyan;
-            this.btnLichSuDangNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnLichSuDangNhap.Image")));
-            this.btnLichSuDangNhap.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnLichSuDangNhap.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnLichSuDangNhap.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLichSuDangNhap.Location = new System.Drawing.Point(7, 0);
-            this.btnLichSuDangNhap.Name = "btnLichSuDangNhap";
-            this.btnLichSuDangNhap.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnLichSuDangNhap.Size = new System.Drawing.Size(232, 57);
-            this.btnLichSuDangNhap.TabIndex = 27;
-            this.btnLichSuDangNhap.Text = "Lịch Sử Đăng Nhập";
-            this.btnLichSuDangNhap.Click += new System.EventHandler(this.btnLichSuDangNhap_Click);
             // 
             // FrmMain
             // 
@@ -1406,8 +1406,16 @@
             this.MenuBaoCaoNhapKho.ResumeLayout(false);
             this.MenuLichSu.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
+            this.MenuLichSuGia.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel22.ResumeLayout(false);
             this.MenuBaoCao.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.Sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.MenuQuanLy.ResumeLayout(false);
@@ -1417,14 +1425,6 @@
             this.MenuXuatKho.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
             this.MenuBaoCaoXuatKho.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.MenuLichSuGia.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

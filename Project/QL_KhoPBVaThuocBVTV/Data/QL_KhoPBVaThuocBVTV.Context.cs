@@ -31,6 +31,7 @@ namespace QL_KhoPBVaThuocBVTV.Data
         public DbSet<DangNhap> DangNhaps { get; set; }
         public DbSet<DanhGiaSanPham> DanhGiaSanPhams { get; set; }
         public DbSet<DuDoanNhapHang> DuDoanNhapHangs { get; set; }
+        public DbSet<KhachHang> KhachHangs { get; set; }
         public DbSet<Kho> Khoes { get; set; }
         public DbSet<KiemKeKho> KiemKeKhoes { get; set; }
         public DbSet<LichSuDatLaiMatKhau> LichSuDatLaiMatKhaus { get; set; }

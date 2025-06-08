@@ -4,27 +4,28 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="28fe3c3b37554589a0a0ebb7e6cad4da" Name="Diagram1">
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.ChiTietKiemKe" Width="1.5" PointX="10.5" PointY="26.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.ChiTietPhieuNhap" Width="1.5" PointX="13.5" PointY="28" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.ChiTietPhieuXuat" Width="1.5" PointX="10.5" PointY="23.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.DangNhap" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.DanhGiaSanPham" Width="1.5" PointX="6" PointY="22" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.DuDoanNhapHang" Width="1.5" PointX="7.5" PointY="33.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.Kho" Width="1.5" PointX="3" PointY="23.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.KiemKeKho" Width="1.5" PointX="8.25" PointY="22" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LichSuDatLaiMatKhau" Width="1.5" PointX="5.25" PointY="32.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LichSuGia" Width="1.5" PointX="13.5" PointY="23.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LichSuHoatDong" Width="1.5" PointX="3" PointY="31.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LoaiSanPham" Width="1.5" PointX="6" PointY="38" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.NguoiDung" Width="1.5" PointX="0.75" PointY="20.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.NhaCungCap" Width="1.5" PointX="6" PointY="41.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.PhanTichBanHang" Width="1.5" PointX="10.5" PointY="32.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.PhieuNhapKho" Width="1.5" PointX="5.25" PointY="26.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.PhieuXuatKho" Width="1.5" PointX="5.25" PointY="16.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.SanPham" Width="1.5" PointX="8.25" PointY="26.125" IsExpanded="true" />
+      <Diagram DiagramId="e37b20efa3124f569e7026ddbd61cbe4" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.ChiTietKiemKe" Width="1.5" PointX="10.5" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.ChiTietPhieuNhap" Width="1.5" PointX="13.5" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.ChiTietPhieuXuat" Width="1.5" PointX="10.5" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.DangNhap" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.DanhGiaSanPham" Width="1.5" PointX="6" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.DuDoanNhapHang" Width="1.5" PointX="7.5" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.KhachHang" Width="1.5" PointX="3.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.Kho" Width="1.5" PointX="3" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.KiemKeKho" Width="1.5" PointX="8.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LichSuDatLaiMatKhau" Width="1.5" PointX="5.25" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LichSuGia" Width="1.5" PointX="13.5" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LichSuHoatDong" Width="1.5" PointX="3" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.LoaiSanPham" Width="1.5" PointX="6" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.NguoiDung" Width="1.5" PointX="0.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.NhaCungCap" Width="1.5" PointX="6" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.PhanTichBanHang" Width="1.5" PointX="10.5" PointY="33" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.PhieuNhapKho" Width="1.5" PointX="5.25" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.PhieuXuatKho" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.SanPham" Width="1.5" PointX="8.25" PointY="27" IsExpanded="true" />
         <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.YeuCauDatLaiMatKhau" Width="1.5" PointX="3" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_KHOPhanBonThuocBVTVModel.YeuCauDatLaiMatKhau" Width="1.5" PointX="3" PointY="35.875" IsExpanded="true" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__ChiTietKi__MaKie__22751F6C" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__ChiTietKie__MaSP__236943A5" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__ChiTietPh__MaPhi__08B54D69" ManuallyRouted="false" />
@@ -36,7 +37,9 @@
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__DanhGiaSa__Nguoi__7A672E12" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__DanhGiaSa__Nguoi__7B5B524B" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__DanhGiaSan__MaSP__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK_DanhGiaSanPham_KhachHang" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__DuDoanNha__MaPhi__2FCF1A8A" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK_PhieuXuatKho_KhachHang" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__Kho__MaND__619B8048" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__KiemKeKho__MaKho__1CBC4616" ManuallyRouted="false" />
         <AssociationConnector Association="QL_KHOPhanBonThuocBVTVModel.FK__PhieuNhap__MaKho__02FC7413" ManuallyRouted="false" />

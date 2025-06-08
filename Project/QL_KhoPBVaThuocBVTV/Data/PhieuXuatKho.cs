@@ -30,8 +30,10 @@ namespace QL_KhoPBVaThuocBVTV.Data
         public string GhiChu { get; set; }
         public Nullable<System.DateTime> NgayTao { get; set; }
         public Nullable<System.DateTime> NgayCapNhat { get; set; }
+        public Nullable<int> MaKH { get; set; }
     
         public virtual ICollection<ChiTietPhieuXuat> ChiTietPhieuXuats { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
         public virtual Kho Kho { get; set; }
         public virtual NguoiDung NguoiDung { get; set; }
     }

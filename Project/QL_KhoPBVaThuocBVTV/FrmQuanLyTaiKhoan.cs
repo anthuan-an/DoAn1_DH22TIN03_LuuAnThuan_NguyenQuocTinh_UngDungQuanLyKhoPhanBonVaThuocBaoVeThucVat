@@ -13,11 +13,18 @@ namespace QL_KhoPBVaThuocBVTV
     public partial class FrmQuanLyTaiKhoan : Form
     {
         private string maND;
+        private string PhanQuyen;
         private Form currentChildForm;
-        public FrmQuanLyTaiKhoan(string maND)
+
+        public FrmQuanLyTaiKhoan(string maND, string phanQuyen)
         {
             InitializeComponent();
             this.maND = maND;
+            PhanQuyen = phanQuyen;
+        }
+        private void FrmQuanLyTaiKhoan_Load(object sender, EventArgs e)
+        {
+            ApDungPhanQuyen();
         }
 
         private void btnHien_Click(object sender, EventArgs e)
@@ -60,16 +67,19 @@ namespace QL_KhoPBVaThuocBVTV
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
+            lblThongBao.Text = "Quản Lý Tài Khoản";
             OpenChildForm(new FrmTaiKhoan());
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
+            lblThongBao.Text = "Quản Lý Nhân Viên";
             OpenChildForm(new FrmNhanVien());
         }
 
         private void btnCapLai_Click(object sender, EventArgs e)
         {
+            lblThongBao.Text = "Đặt Lại Mật Khẩu";
             OpenChildForm(new FrmDatLaiMK(maND));
         }
         public void MoFormConTrongPanel(Form form)
@@ -81,7 +91,26 @@ namespace QL_KhoPBVaThuocBVTV
             pnlQuanLy.Controls.Add(form);
             form.Show();
         }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            lblThongBao.Text = "Quản Lý Khách Hàng";
+            OpenChildForm(new FrmKhachHang());
+        }
+        private void ApDungPhanQuyen()
+        {
+            if(PhanQuyen == "Nhân viên")
+            {
+                btnCapLai.Visible = false;
+                btnTaiKhoan.Visible = false;
+                btnNhanVien.Visible = false;
+                OpenChildForm(new FrmKhachHang());
+                lblThongBao.Text = "Quản Lý Khách Hàng";
+            }
+            lblThongBao.Text = "Quản Lý Nhân Viên";
+            OpenChildForm(new FrmNhanVien());
+        }
+
+
     }
-    //70, 713
-    //281, 713
 }

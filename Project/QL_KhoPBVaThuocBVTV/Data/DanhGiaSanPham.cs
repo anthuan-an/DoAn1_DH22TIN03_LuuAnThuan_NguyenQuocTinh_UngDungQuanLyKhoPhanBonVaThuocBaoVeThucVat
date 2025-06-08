@@ -22,10 +22,12 @@ namespace QL_KhoPBVaThuocBVTV.Data
         public Nullable<int> NguoiDanhGia { get; set; }
         public Nullable<int> NguoiTao { get; set; }
         public Nullable<int> NguoiCapNhat { get; set; }
+        public Nullable<int> MaKH { get; set; }
     
         public virtual NguoiDung NguoiDung { get; set; }
         public virtual NguoiDung NguoiDung1 { get; set; }
         public virtual NguoiDung NguoiDung2 { get; set; }
         public virtual SanPham SanPham { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
     }
 }

@@ -93,6 +93,9 @@
     <Compile Include="Data\DuDoanNhapHang.cs">
       <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
     </Compile>
+    <Compile Include="Data\KhachHang.cs">
+      <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\Kho.cs">
       <DependentUpon>QL_KhoPBVaThuocBVTV.tt</DependentUpon>
     </Compile>
@@ -162,6 +165,12 @@
     <Compile Include="FrmDatLaiMK.Designer.cs">
       <DependentUpon>FrmDatLaiMK.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +216,9 @@
     <Compile Include="ImageZoom.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDatLaiMK.resx">
+      <DependentUpon>FrmDatLaiMK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuenMK.resx">
       <DependentUpon>FrmQuenMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTaiKhoan.resx">
+      <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrangChuPhu.resx">
       <DependentUpon>FrmTrangChuPhu.cs</DependentUpon>
