@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmQuanLyTaiKhoan));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pnlMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -152,6 +152,7 @@
             this.btnCapLai.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCapLai.ForeColor = System.Drawing.Color.White;
             this.btnCapLai.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnCapLai.Image = ((System.Drawing.Image)(resources.GetObject("btnCapLai.Image")));
             this.btnCapLai.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCapLai.ImageSize = new System.Drawing.Size(50, 50);
             this.btnCapLai.Location = new System.Drawing.Point(-182, 376);
@@ -181,6 +182,7 @@
             this.btnTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.btnTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.Image")));
             this.btnTaiKhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(50, 50);
             this.btnTaiKhoan.Location = new System.Drawing.Point(-182, 218);
@@ -210,6 +212,7 @@
             this.btnNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
             this.btnNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnNhanVien.ImageSize = new System.Drawing.Size(50, 50);
             this.btnNhanVien.Location = new System.Drawing.Point(-181, 64);
@@ -234,22 +237,22 @@
             // 
             this.TrSTInOuter.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.TrSTInOuter.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.TrSTInOuter.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.TrSTInOuter.DefaultAnimation = animation2;
             // 
             // FrmQuanLyTaiKhoan
             // 

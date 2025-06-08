@@ -231,9 +231,10 @@ namespace QL_KhoPBVaThuocBVTV
 
             if (currentMenuExpanded)
             {
-                currentMenuPanel.Height -= 15;
+                currentMenuPanel.Height -= 10;
                 if (currentMenuPanel.Height <= 57)
                 {
+                    currentMenuPanel.Height = 57;
                     MenuTransition.Stop();
                     currentMenuExpanded = false;
                     currentMenuPanel = null;
@@ -249,7 +250,7 @@ namespace QL_KhoPBVaThuocBVTV
             }
             else
             {
-                currentMenuPanel.Height += 15;
+                currentMenuPanel.Height += 10;
                 if (currentMenuPanel.Height >= targetHeight)
                 {
                     currentMenuPanel.Height = targetHeight;
@@ -500,5 +501,5 @@ namespace QL_KhoPBVaThuocBVTV
 
         }
 
-    }
+       }
 }

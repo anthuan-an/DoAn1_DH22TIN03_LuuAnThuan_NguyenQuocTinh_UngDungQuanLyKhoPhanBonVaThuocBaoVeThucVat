@@ -223,7 +223,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(113, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 26);
+            this.label1.Size = new System.Drawing.Size(80, 25);
             this.label1.TabIndex = 17;
             this.label1.Text = "Họ Tên";
             // 
@@ -235,7 +235,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(113, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 26);
+            this.label2.Size = new System.Drawing.Size(224, 25);
             this.label2.TabIndex = 18;
             this.label2.Text = "Ngày Tháng Năm Sinh";
             // 
@@ -247,7 +247,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(372, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 26);
+            this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 19;
             this.label3.Text = "Số CCCD";
             // 
@@ -259,7 +259,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(372, 187);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 26);
+            this.label4.Size = new System.Drawing.Size(142, 25);
             this.label4.TabIndex = 20;
             this.label4.Text = "Số Điện Thoại";
             // 
@@ -271,7 +271,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(113, 271);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 26);
+            this.label5.Size = new System.Drawing.Size(68, 25);
             this.label5.TabIndex = 21;
             this.label5.Text = "Email";
             // 
@@ -283,7 +283,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(372, 271);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 26);
+            this.label6.Size = new System.Drawing.Size(91, 25);
             this.label6.TabIndex = 22;
             this.label6.Text = "Mã OTP";
             // 
@@ -344,7 +344,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(268, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(205, 26);
+            this.label8.Size = new System.Drawing.Size(197, 25);
             this.label8.TabIndex = 28;
             this.label8.Text = "Nhập Lại Mật Khẩu";
             // 
@@ -356,7 +356,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(9, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 26);
+            this.label7.Size = new System.Drawing.Size(105, 25);
             this.label7.TabIndex = 27;
             this.label7.Text = "Mật Khẩu";
             // 
