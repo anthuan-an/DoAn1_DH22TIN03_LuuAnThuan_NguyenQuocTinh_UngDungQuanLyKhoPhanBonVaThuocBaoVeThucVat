@@ -62,6 +62,7 @@
           <ScalarProperty Name="NguoiDanhGia" ColumnName="NguoiDanhGia" />
           <ScalarProperty Name="NguoiTao" ColumnName="NguoiTao" />
           <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -76,6 +77,17 @@
           <ScalarProperty Name="MucDich" ColumnName="MucDich" />
           <ScalarProperty Name="CanCuVao" ColumnName="CanCuVao" />
           <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachHangs">
+      <EntityTypeMapping TypeName="QL_KHOPhanBonThuocBVTVModel.KhachHang">
+        <MappingFragment StoreEntitySet="KhachHang">
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -239,6 +251,7 @@
           <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
           <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
           <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

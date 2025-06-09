@@ -1358,7 +1358,7 @@
             this.pnlBanTB.BorderRadius = 10;
             this.pnlBanTB.Location = new System.Drawing.Point(1060, 51);
             this.pnlBanTB.Name = "pnlBanTB";
-            this.pnlBanTB.Size = new System.Drawing.Size(329, 88);
+            this.pnlBanTB.Size = new System.Drawing.Size(329, 128);
             this.pnlBanTB.TabIndex = 0;
             // 
             // guna2DragControl1

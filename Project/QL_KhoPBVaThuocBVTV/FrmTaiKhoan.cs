@@ -16,5 +16,10 @@ namespace QL_KhoPBVaThuocBVTV
         {
             InitializeComponent();
         }
+
+        private void btnTimKiem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

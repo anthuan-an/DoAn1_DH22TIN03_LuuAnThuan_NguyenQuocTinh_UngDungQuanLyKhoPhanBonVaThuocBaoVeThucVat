@@ -32,8 +32,8 @@ namespace QL_KhoPBVaThuocBVTV
         {
             timerTime.Interval = 1000;
             timerTime.Start();
+            lblChucVu.Text = Quyen + " :";
             lblTen.Text = TenNguoiDung;
-            lblChucVu.Text = Quyen;
 
             if (int.TryParse(MaND, out int maNguoiDung))
             {
@@ -78,9 +78,16 @@ namespace QL_KhoPBVaThuocBVTV
                 if (nguoiDung != null && nguoiDung.AnhDaiDien != null && nguoiDung.AnhDaiDien.Length > 0)
                 {
 
-                    using (var ms = new MemoryStream(nguoiDung.AnhDaiDien))
+                    try
                     {
-                        pcbAvatar.Image = Image.FromStream(ms);
+                        using (var ms = new MemoryStream(nguoiDung.AnhDaiDien))
+                        {
+                            pcbAvatar.Image = Image.FromStream(ms);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        pcbAvatar.Image = Properties.Resources.icons8_account_32;
                     }
                 }
                 else

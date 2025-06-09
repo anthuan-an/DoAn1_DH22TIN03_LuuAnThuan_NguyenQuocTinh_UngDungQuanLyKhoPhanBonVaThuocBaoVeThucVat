@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmQuanLyTaiKhoan));
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lblThongBao = new ReaLTaiizor.Controls.SkyLabel();
             this.pnlMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btnKhachHang = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnHien = new Guna.UI2.WinForms.Guna2Button();
@@ -43,7 +44,6 @@
             this.pnlQuanLy = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.TrSTInOuter = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.lblThongBao = new ReaLTaiizor.Controls.SkyLabel();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,17 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1323, 57);
             this.guna2CustomGradientPanel1.TabIndex = 0;
             // 
+            // lblThongBao
+            // 
+            this.TrSTInOuter.SetDecoration(this.lblThongBao, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblThongBao.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblThongBao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblThongBao.Location = new System.Drawing.Point(185, 9);
+            this.lblThongBao.Name = "lblThongBao";
+            this.lblThongBao.Size = new System.Drawing.Size(891, 40);
+            this.lblThongBao.TabIndex = 0;
+            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pnlMenu
             // 
             this.pnlMenu.Controls.Add(this.btnKhachHang);
@@ -75,9 +86,9 @@
             this.pnlMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pnlMenu.FillColor3 = System.Drawing.Color.Black;
             this.pnlMenu.FillColor4 = System.Drawing.Color.Black;
-            this.pnlMenu.Location = new System.Drawing.Point(1233, 57);
+            this.pnlMenu.Location = new System.Drawing.Point(1037, 57);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(90, 713);
+            this.pnlMenu.Size = new System.Drawing.Size(286, 713);
             this.pnlMenu.TabIndex = 2;
             // 
             // btnKhachHang
@@ -101,7 +112,7 @@
             this.btnKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.Image")));
             this.btnKhachHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnKhachHang.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnKhachHang.Location = new System.Drawing.Point(-183, 286);
+            this.btnKhachHang.Location = new System.Drawing.Point(13, 286);
             this.btnKhachHang.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(270, 80);
@@ -127,10 +138,11 @@
             this.btnHien.Image = ((System.Drawing.Image)(resources.GetObject("btnHien.Image")));
             this.btnHien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnHien.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnHien.Location = new System.Drawing.Point(-91, 513);
+            this.btnHien.Location = new System.Drawing.Point(105, 513);
             this.btnHien.Name = "btnHien";
             this.btnHien.Size = new System.Drawing.Size(156, 98);
             this.btnHien.TabIndex = 6;
+            this.btnHien.Visible = false;
             this.btnHien.Click += new System.EventHandler(this.btnHien_Click);
             // 
             // btnAn
@@ -150,11 +162,10 @@
             this.btnAn.Image = ((System.Drawing.Image)(resources.GetObject("btnAn.Image")));
             this.btnAn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnAn.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnAn.Location = new System.Drawing.Point(-280, 513);
+            this.btnAn.Location = new System.Drawing.Point(-84, 513);
             this.btnAn.Name = "btnAn";
             this.btnAn.Size = new System.Drawing.Size(156, 98);
             this.btnAn.TabIndex = 5;
-            this.btnAn.Visible = false;
             this.btnAn.Click += new System.EventHandler(this.btnAn_Click);
             // 
             // guna2Separator1
@@ -164,7 +175,7 @@
             this.TrSTInOuter.SetDecoration(this.guna2Separator1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Separator1.FillColor = System.Drawing.Color.White;
             this.guna2Separator1.FillThickness = 3;
-            this.guna2Separator1.Location = new System.Drawing.Point(-118, 555);
+            this.guna2Separator1.Location = new System.Drawing.Point(78, 555);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(196, 10);
             this.guna2Separator1.TabIndex = 3;
@@ -190,7 +201,7 @@
             this.btnCapLai.Image = ((System.Drawing.Image)(resources.GetObject("btnCapLai.Image")));
             this.btnCapLai.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCapLai.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnCapLai.Location = new System.Drawing.Point(-183, 427);
+            this.btnCapLai.Location = new System.Drawing.Point(13, 427);
             this.btnCapLai.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnCapLai.Name = "btnCapLai";
             this.btnCapLai.Size = new System.Drawing.Size(270, 80);
@@ -220,7 +231,7 @@
             this.btnTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.Image")));
             this.btnTaiKhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnTaiKhoan.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnTaiKhoan.Location = new System.Drawing.Point(-183, 153);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(13, 153);
             this.btnTaiKhoan.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Size = new System.Drawing.Size(270, 80);
@@ -250,7 +261,7 @@
             this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
             this.btnNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnNhanVien.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnNhanVien.Location = new System.Drawing.Point(-181, 33);
+            this.btnNhanVien.Location = new System.Drawing.Point(15, 33);
             this.btnNhanVien.MaximumSize = new System.Drawing.Size(270, 80);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(270, 80);
@@ -265,40 +276,29 @@
             this.pnlQuanLy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlQuanLy.Location = new System.Drawing.Point(0, 57);
             this.pnlQuanLy.Name = "pnlQuanLy";
-            this.pnlQuanLy.Size = new System.Drawing.Size(1233, 713);
+            this.pnlQuanLy.Size = new System.Drawing.Size(1037, 713);
             this.pnlQuanLy.TabIndex = 3;
             // 
             // TrSTInOuter
             // 
             this.TrSTInOuter.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.TrSTInOuter.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.TrSTInOuter.DefaultAnimation = animation1;
-            // 
-            // lblThongBao
-            // 
-            this.TrSTInOuter.SetDecoration(this.lblThongBao, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.lblThongBao.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblThongBao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblThongBao.Location = new System.Drawing.Point(185, 9);
-            this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(891, 40);
-            this.lblThongBao.TabIndex = 0;
-            this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.TrSTInOuter.DefaultAnimation = animation2;
             // 
             // FrmQuanLyTaiKhoan
             // 
