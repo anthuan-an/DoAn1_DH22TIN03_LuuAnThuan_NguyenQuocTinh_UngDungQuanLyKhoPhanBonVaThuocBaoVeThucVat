@@ -283,8 +283,6 @@
     <Property Name="NgayXuLy" Type="datetime" />
     <Property Name="NguoiXuLy" Type="int" />
     <Property Name="GhiChu" Type="text" />
-    <Property Name="NgayTao" Type="datetime" />
-    <Property Name="NgayCapNhat" Type="datetime" />
   </EntityType>
   <Association Name="FK__ChiTietKi__MaKie__22751F6C">
     <End Role="KiemKeKho" Type="Self.KiemKeKho" Multiplicity="0..1" />

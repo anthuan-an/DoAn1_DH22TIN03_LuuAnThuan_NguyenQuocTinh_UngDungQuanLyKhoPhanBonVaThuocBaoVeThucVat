@@ -303,8 +303,6 @@
           <ScalarProperty Name="NgayXuLy" ColumnName="NgayXuLy" />
           <ScalarProperty Name="NguoiXuLy" ColumnName="NguoiXuLy" />
           <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
-          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
-          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

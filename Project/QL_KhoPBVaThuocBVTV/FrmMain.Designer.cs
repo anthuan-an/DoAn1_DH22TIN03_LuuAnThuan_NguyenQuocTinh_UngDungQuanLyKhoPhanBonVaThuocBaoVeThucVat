@@ -1146,8 +1146,7 @@
             this.btnQuanLyTaiKhoan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnQuanLyTaiKhoan.Size = new System.Drawing.Size(245, 57);
             this.btnQuanLyTaiKhoan.TabIndex = 3;
-            this.btnQuanLyTaiKhoan.Text = "Quản Lý Tài Khoản";
-            this.btnQuanLyTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnQuanLyTaiKhoan.Text = "Quản Lý";
             this.btnQuanLyTaiKhoan.Click += new System.EventHandler(this.btnQuanLyTaiKhoan_Click);
             // 
             // MenuXuatHang
@@ -1383,7 +1382,7 @@
             this.MinimumSize = new System.Drawing.Size(850, 670);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "FrmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);

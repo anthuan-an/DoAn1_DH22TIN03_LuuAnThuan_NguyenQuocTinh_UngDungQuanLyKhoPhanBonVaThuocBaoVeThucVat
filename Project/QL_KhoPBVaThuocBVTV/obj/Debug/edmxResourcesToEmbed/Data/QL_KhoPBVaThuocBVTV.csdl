@@ -356,8 +356,6 @@
     <Property Name="NgayXuLy" Type="DateTime" Precision="3" />
     <Property Name="NguoiXuLy" Type="Int32" />
     <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="NgayTao" Type="DateTime" Precision="3" />
-    <Property Name="NgayCapNhat" Type="DateTime" Precision="3" />
     <NavigationProperty Name="LichSuDatLaiMatKhaus" Relationship="Self.FK__LichSuDat__MaYeu__48CFD27E" FromRole="YeuCauDatLaiMatKhau" ToRole="LichSuDatLaiMatKhau" />
     <NavigationProperty Name="NguoiDung" Relationship="Self.FK__YeuCauDat__Nguoi__440B1D61" FromRole="YeuCauDatLaiMatKhau" ToRole="NguoiDung" />
     <NavigationProperty Name="NguoiDung1" Relationship="Self.FK__YeuCauDatL__MaND__4316F928" FromRole="YeuCauDatLaiMatKhau" ToRole="NguoiDung" />

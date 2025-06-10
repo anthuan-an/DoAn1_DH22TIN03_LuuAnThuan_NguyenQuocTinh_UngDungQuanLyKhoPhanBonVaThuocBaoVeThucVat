@@ -192,7 +192,6 @@ namespace QL_KhoPBVaThuocBVTV
             else
             {
                 CapNhatThongBao();
-                pnlBanTB.BringToFront();
                 pnlBanTB.Visible = true;
             }
         }
@@ -409,22 +408,22 @@ namespace QL_KhoPBVaThuocBVTV
         // Sản Phẩm
         private void btnHangHoa_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new FrmHangHoa(MaND));
         }
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new FrmDanhMuc());
         }
 
         private void btnNhaSX_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new FrmNhaSanXuat());
         }
 
         private void btnKho_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new FrmKho());
         }
 
 

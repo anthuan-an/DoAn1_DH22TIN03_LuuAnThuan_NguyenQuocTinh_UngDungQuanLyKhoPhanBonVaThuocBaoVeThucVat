@@ -105,7 +105,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.7666F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.03212F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.01285F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label5, 5, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 3, 1);
@@ -136,7 +136,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(70, 19);
+            this.label1.Location = new System.Drawing.Point(69, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 36);
             this.label1.TabIndex = 22;
@@ -147,9 +147,9 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(617, 19);
+            this.label5.Location = new System.Drawing.Point(615, 19);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(284, 36);
+            this.label5.Size = new System.Drawing.Size(283, 36);
             this.label5.TabIndex = 24;
             this.label5.Text = "Trạng Thái";
             // 
@@ -158,9 +158,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(329, 19);
+            this.label3.Location = new System.Drawing.Point(328, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 36);
+            this.label3.Size = new System.Drawing.Size(236, 36);
             this.label3.TabIndex = 23;
             this.label3.Text = "Tài Khoản";
             // 
@@ -169,9 +169,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(617, 115);
+            this.label6.Location = new System.Drawing.Point(615, 115);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(284, 36);
+            this.label6.Size = new System.Drawing.Size(283, 36);
             this.label6.TabIndex = 27;
             this.label6.Text = "Phân Quyền";
             // 
@@ -180,9 +180,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(329, 115);
+            this.label4.Location = new System.Drawing.Point(328, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 36);
+            this.label4.Size = new System.Drawing.Size(236, 36);
             this.label4.TabIndex = 26;
             this.label4.Text = "Mật Khẩu";
             // 
@@ -191,7 +191,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(70, 115);
+            this.label2.Location = new System.Drawing.Point(69, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 36);
             this.label2.TabIndex = 25;
@@ -212,9 +212,9 @@
             this.cbbTrangThai.ItemHeight = 30;
             this.cbbTrangThai.Items.AddRange(new object[] {
             ""});
-            this.cbbTrangThai.Location = new System.Drawing.Point(617, 58);
+            this.cbbTrangThai.Location = new System.Drawing.Point(615, 58);
             this.cbbTrangThai.Name = "cbbTrangThai";
-            this.cbbTrangThai.Size = new System.Drawing.Size(284, 36);
+            this.cbbTrangThai.Size = new System.Drawing.Size(283, 36);
             this.cbbTrangThai.TabIndex = 28;
             // 
             // cbbTenNV
@@ -230,7 +230,7 @@
             this.cbbTenNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbbTenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbbTenNV.ItemHeight = 30;
-            this.cbbTenNV.Location = new System.Drawing.Point(70, 154);
+            this.cbbTenNV.Location = new System.Drawing.Point(69, 154);
             this.cbbTenNV.Name = "cbbTenNV";
             this.cbbTenNV.Size = new System.Drawing.Size(210, 36);
             this.cbbTenNV.TabIndex = 29;
@@ -252,9 +252,9 @@
             "Admin",
             "Nhân viên",
             "Thủ kho"});
-            this.cbbPhanQquyen.Location = new System.Drawing.Point(617, 154);
+            this.cbbPhanQquyen.Location = new System.Drawing.Point(615, 154);
             this.cbbPhanQquyen.Name = "cbbPhanQquyen";
-            this.cbbPhanQquyen.Size = new System.Drawing.Size(284, 36);
+            this.cbbPhanQquyen.Size = new System.Drawing.Size(283, 36);
             this.cbbPhanQquyen.TabIndex = 30;
             // 
             // txtHoTen
@@ -271,7 +271,7 @@
             this.txtHoTen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtHoTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtHoTen.Location = new System.Drawing.Point(70, 59);
+            this.txtHoTen.Location = new System.Drawing.Point(69, 59);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.PlaceholderText = "";
@@ -293,12 +293,12 @@
             this.txtMatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMatKhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMatKhau.Location = new System.Drawing.Point(329, 155);
+            this.txtMatKhau.Location = new System.Drawing.Point(328, 155);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PlaceholderText = "";
             this.txtMatKhau.SelectedText = "";
-            this.txtMatKhau.Size = new System.Drawing.Size(237, 48);
+            this.txtMatKhau.Size = new System.Drawing.Size(236, 48);
             this.txtMatKhau.TabIndex = 32;
             // 
             // txtTaiKhoan
@@ -315,12 +315,12 @@
             this.txtTaiKhoan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTaiKhoan.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(329, 59);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(328, 59);
             this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.PlaceholderText = "";
             this.txtTaiKhoan.SelectedText = "";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(237, 52);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(236, 52);
             this.txtTaiKhoan.TabIndex = 33;
             // 
             // guna2Panel2
