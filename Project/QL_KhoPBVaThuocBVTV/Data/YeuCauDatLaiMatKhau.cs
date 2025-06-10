@@ -29,8 +29,6 @@ namespace QL_KhoPBVaThuocBVTV.Data
         public Nullable<System.DateTime> NgayXuLy { get; set; }
         public Nullable<int> NguoiXuLy { get; set; }
         public string GhiChu { get; set; }
-        public Nullable<System.DateTime> NgayTao { get; set; }
-        public Nullable<System.DateTime> NgayCapNhat { get; set; }
     
         public virtual ICollection<LichSuDatLaiMatKhau> LichSuDatLaiMatKhaus { get; set; }
         public virtual NguoiDung NguoiDung { get; set; }
